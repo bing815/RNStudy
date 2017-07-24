@@ -62,5 +62,6 @@ typings/
 .gradle
 /local.properties
 .idea
+/android/.idea
 /build
 /app/build
