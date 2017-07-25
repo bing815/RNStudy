@@ -72,6 +72,9 @@ const styles = StyleSheet.create({
     listView: {
         backgroundColor: '#F5FCFF',
     },
+    bat: {
+        backgroundColor:'#00a5ff',
+    }
 });
 
 module.exports = styles

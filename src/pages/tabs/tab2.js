@@ -4,6 +4,7 @@ import {
     View,
     Image,
     ListView,
+    StatusBar
 } from 'react-native';
 
 var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
@@ -17,7 +18,7 @@ export  default  class AllContactsScreen extends React.Component {
         // Note: By default the icon is only shown on iOS. Search the showIcon option below.
         tabBarIcon: ({ tintColor,focused }) => (
             <Image
-                source={focused ? require('../../images/f7@2x.png') : {uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+                source={focused ? require('../../images/f7.png') : {uri: 'https://facebook.github.io/react/img/logo_og.png'}}
                 style={[styles.icon]}
             />
         ),

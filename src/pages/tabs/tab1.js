@@ -4,6 +4,7 @@ import {
     View,
     Image,
     FlatList,
+    StatusBar
 } from 'react-native';
 
 import styles from './style'
@@ -13,7 +14,7 @@ export  default  class RecentChatsScreen extends React.Component {
         // Note: By default the icon is only shown on iOS. Search the showIcon option below.
         tabBarIcon: ({ tintColor,focused }) => (
             <Image
-                source={focused ? require('../../images/f7@2x.png') : {uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+                source={focused ? require('../../images/f7.png') : {uri: 'https://facebook.github.io/react/img/logo_og.png'}}
                 style={[styles.icon]}
             />
         ),
@@ -21,6 +22,10 @@ export  default  class RecentChatsScreen extends React.Component {
     render() {
         return(
             <View style={styles.container}>
+                <StatusBar
+                  backgroundColor={'#f0f0f0'}
+                  barStyle={'dark-content'}
+                />
                 <FlatList
                     data={[
                         {key: 'Devin1'},
